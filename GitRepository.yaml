@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: my-repo
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: https://github.com/alexorlenko/devops-test-tsk.git
+  ref:
+    branch: helm-chart
