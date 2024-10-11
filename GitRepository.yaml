@@ -1,4 +1,4 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta2
+apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: my-repo
@@ -8,3 +8,4 @@ spec:
   url: https://github.com/alexorlenko/devops-test-tsk.git
   ref:
     branch: helm-chart
+  timeout: 60s

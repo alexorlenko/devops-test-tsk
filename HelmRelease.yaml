@@ -1,4 +1,4 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
+apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: my-app
@@ -13,3 +13,4 @@ spec:
         name: my-repo
         namespace: flux-system
       interval: 5m
+  interval: 5m
